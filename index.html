@@ -13,8 +13,8 @@
   <meta property="og:title" content="Right Angle Interior &amp; Furniture">
   <meta property="og:description" content="Premium interior design, custom furniture and complete interior solutions.">
   
-  <!-- FAVICON: Save a square logo as favicon.png in your images folder -->
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <!-- FAVICON -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -165,16 +165,6 @@ button{cursor:pointer}
 }
 .section-sub{max-width:460px;margin:0;color:var(--muted);font-size:13px}
 
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:center}
-.about__lead{font:400 22px/1.55 var(--serif);max-width:620px;margin:28px 0 18px}
-.about__body{max-width:590px;color:var(--muted)}
-.about__media{position:relative}
-.r-4x5{aspect-ratio:4/5}.r-3x4{aspect-ratio:3/4}.r-1x1{aspect-ratio:1}.r-4x3{aspect-ratio:4/3}.r-3x2{aspect-ratio:3/2}
-.about__media:before{
-  content:"";position:absolute;width:65%;height:65%;right:-24px;bottom:-24px;
-  border:1px solid var(--brass);z-index:-1;
-}
-
 .services{
   list-style:none;margin:0;padding:0;display:grid;
   grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);
@@ -270,7 +260,7 @@ button{cursor:pointer}
 /* --- Responsive Layout Rules --- */
 @media(max-width:900px){
   .nav__links{display:none}
-  .about,.contact{grid-template-columns:1fr;gap:50px}
+  .contact{grid-template-columns:1fr;gap:50px}
   .services{grid-template-columns:1fr 1fr}
   .service:not(:nth-child(3n+1)){padding-left:0;border-left:0}
   .service:nth-child(even){padding-left:25px;border-left:1px solid var(--line)}
@@ -330,7 +320,6 @@ button{cursor:pointer}
   .nav .btn--nav{display:inline-flex;margin-top:15px}
   .site-header:not(.is-scrolled) .nav{color:var(--ink)}
 }
-
   </style>
 </head>
 
@@ -379,7 +368,7 @@ button{cursor:pointer}
     <!-- HERO -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="photo hero__photo">
-        <img src="images/hero-interior2.jpg" alt="A finished living room interior by Right Angle Interior &amp; Furniture" fetchpriority="high" decoding="async">
+        <img src="hero-interior2.jpg" alt="A finished living room interior by Right Angle Interior &amp; Furniture" fetchpriority="high" decoding="async">
       </div>
 
       <div class="hero__frame" aria-hidden="true">
@@ -457,7 +446,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-4x5">
-                <img src="images/p1.jpg" alt="Luxury living room interior" loading="lazy" decoding="async">
+                <img src="p1.jpg" alt="Luxury living room interior" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Luxury Living Room</span>
@@ -470,7 +459,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-1x1">
-                <img src="images/p2.png" alt="Modular kitchen with custom cabinetry" loading="lazy" decoding="async">
+                <img src="p2.png" alt="Modular kitchen with custom cabinetry" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Modular Kitchen</span>
@@ -483,7 +472,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-4x5">
-                <img src="images/p3.png" alt="Premium bedroom interior" loading="lazy" decoding="async">
+                <img src="p3.png" alt="Premium bedroom interior" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Premium Bedroom</span>
@@ -496,7 +485,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-3x4">
-                <img src="images/p4.png" alt="Custom-built furniture piece" loading="lazy" decoding="async">
+                <img src="p4.png" alt="Custom-built furniture piece" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Custom Furniture</span>
@@ -509,7 +498,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-4x3">
-                <img src="images/p5.png" alt="Office or commercial interior" loading="lazy" decoding="async">
+                <img src="p5.png" alt="Office or commercial interior" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Office Interior</span>
@@ -522,7 +511,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-4x5">
-                <img src="images/p6.jpg" alt="TV unit and living area" loading="lazy" decoding="async">
+                <img src="p6.jpg" alt="TV unit and living area" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">TV Unit &amp; Living Area</span>
@@ -535,7 +524,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-3x4">
-                <img src="images/p7.png" alt="Wardrobe and storage" loading="lazy" decoding="async">
+                <img src="p7.png" alt="Wardrobe and storage" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Wardrobe &amp; Storage</span>
@@ -548,7 +537,7 @@ button{cursor:pointer}
           <li class="project reveal">
             <button class="project__btn" type="button" data-lightbox>
               <span class="photo r-1x1">
-                <img src="images/p8.jpg" alt="A completed interior project" loading="lazy" decoding="async">
+                <img src="p8.jpg" alt="A completed interior project" loading="lazy" decoding="async">
               </span>
               <span class="project__overlay">
                 <span class="project__title">Completed Interior</span>
