@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <!-- Dark rounded background matching your theme -->
+  <rect width="28" height="28" rx="6" fill="#171614"/>
+  
+  <!-- Right Angle Symbol -->
+  <path d="M6 5v18h18" fill="none" stroke="#b08a57" stroke-width="2.5"/>
+  <rect x="6" y="18" width="5" height="5" fill="#b08a57"/>
+</svg>

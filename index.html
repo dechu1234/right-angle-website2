@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Right Angle Interior &amp; Furniture | Interior Design, Custom Furniture &amp; Complete Interiors</title>
+  <meta name="description" content="Right Angle Interior &amp; Furniture creates premium residential and commercial interiors, custom and modular furniture, and complete interior execution, from concept to handover.">
+  <meta name="theme-color" content="#1F1E1C">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Right Angle Interior &amp; Furniture">
+  <meta property="og:description" content="Premium interior design, custom furniture and complete interior solutions.">
+  
+  <!-- FAVICON: Save a square logo as favicon.png in your images folder -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- SEO: business details -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Right Angle Interior & Furniture",
+    "description": "Interior design, custom and modular furniture, renovation and complete interior contracting for homes and commercial spaces."
+  }
+  </script>
+
+  <noscript><style>.photo img{opacity:1}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <style>
+/* =========================================================
+   RIGHT ANGLE INTERIOR & FURNITURE
+   Main stylesheet
+   ========================================================= */
+
+:root{
+  --ink:#211f1c;
+  --muted:#716c65;
+  --cream:#f7f4ee;
+  --paper:#fffdf9;
+  --beige:#eee7dc;
+  --line:#d8d0c5;
+  --brass:#b08a57;
+  --dark:#171614;
+  --shadow:0 18px 55px rgba(25,22,18,.12);
+  --container:1180px;
+  --serif:"Cormorant Garamond", Georgia, serif;
+  --sans:"Montserrat", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(calc(100% - 48px),var(--container));margin-inline:auto}
+
+.skip-link{
+  position:fixed;left:16px;top:-60px;z-index:9999;
+  padding:10px 16px;background:#fff;color:#111;
+}
+.skip-link:focus{top:16px}
+
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  color:#fff;
+  transition:.35s ease;
+}
+.site-header.is-scrolled{
+  background:rgba(255,253,249,.96);
+  color:var(--ink);
+  box-shadow:0 8px 30px rgba(0,0,0,.08);
+  backdrop-filter:blur(12px);
+}
+.site-header__inner{
+  min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:28px;
+}
+.brand{text-decoration:none;display:flex;align-items:center}
+.logo{display:flex;align-items:center;gap:10px}
+.wordmark{display:flex;align-items:center;gap:9px}
+.wordmark__mark{flex:0 0 auto}
+.wordmark__text{display:flex;flex-direction:column;line-height:1}
+.wordmark__name{font:600 24px/1 var(--serif);letter-spacing:.02em}
+.wordmark__sub{font:500 8px/1.3 var(--sans);letter-spacing:.22em;text-transform:uppercase;margin-top:6px}
+.site-header.is-scrolled .wordmark__mark{color:var(--ink)}
+.nav{display:flex;align-items:center;gap:25px}
+.nav__links{display:flex;list-style:none;margin:0;padding:0;gap:25px}
+.nav__link{text-decoration:none;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.nav__link:hover{opacity:1;color:var(--brass)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:0 24px;border:1px solid transparent;
+  text-decoration:none;text-transform:uppercase;letter-spacing:.12em;
+  font-size:10px;font-weight:600;transition:.25s ease;
+}
+.btn--nav{min-height:42px;padding-inline:18px;border-color:currentColor}
+.btn--nav:hover{background:var(--brass);border-color:var(--brass);color:#fff}
+.btn--light{background:#fff;color:var(--ink)}
+.btn--light:hover{background:var(--brass);color:#fff}
+.btn--outline-light{border-color:rgba(255,255,255,.65);color:#fff}
+.btn--outline-light:hover{background:#fff;color:var(--ink)}
+.btn--solid{background:var(--ink);color:#fff}
+.btn--solid:hover{background:var(--brass)}
+.btn--brass{background:var(--brass);color:#fff}
+.btn--brass:hover{background:#8f6d43}
+.btn--outline-dark{border-color:var(--ink)}
+.btn--outline-dark:hover{background:var(--ink);color:#fff}
+
+.hero{
+  min-height:100svh;position:relative;display:grid;place-items:center;
+  overflow:hidden;background:#25221e;color:#fff;
+}
+.hero__photo,.hero__photo img{
+  position:absolute;inset:0;width:100%;height:100%;
+}
+.hero__photo img{object-fit:cover;filter:brightness(.56)}
+.hero__photo:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(10,9,8,.62),rgba(10,9,8,.18) 65%,rgba(10,9,8,.38));
+}
+.photo{position:relative;overflow:hidden;background:#ddd7ce}
+.photo:has(img:not([src]))::after{content:"Photo";position:absolute;inset:0;display:grid;place-items:center;color:#777}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hero__content{position:relative;z-index:2;padding-top:90px}
+.hero__title{margin:0;max-width:760px}
+.hero__title-main{display:block;font:500 clamp(64px,9vw,122px)/.82 var(--serif);letter-spacing:-.025em}
+.hero__title-sub{display:block;font:500 clamp(14px,1.7vw,21px)/1.3 var(--sans);letter-spacing:.35em;text-transform:uppercase;margin:25px 0 20px}
+.hero__tagline{font:italic 26px/1.2 var(--serif);margin:0 0 15px;color:#e5d5bd}
+.hero__lead{max-width:610px;font-size:14px;color:rgba(255,255,255,.82)}
+.hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero__frame{position:absolute;inset:9%;border:1px solid rgba(255,255,255,.16);pointer-events:none;z-index:1}
+.corner{position:absolute;width:70px;height:70px}
+.corner--tl{top:-1px;left:-1px;border-top:2px solid var(--brass);border-left:2px solid var(--brass)}
+.corner--br{right:-1px;bottom:-1px;border-right:2px solid var(--brass);border-bottom:2px solid var(--brass)}
+.scroll-cue{
+  position:absolute;z-index:3;bottom:30px;left:50%;width:22px;height:35px;
+  border:1px solid rgba(255,255,255,.6);border-radius:15px;transform:translateX(-50%);
+}
+.scroll-cue:after{content:"";position:absolute;width:3px;height:7px;background:#fff;left:50%;top:7px;transform:translateX(-50%);animation:scrollDot 1.6s infinite}
+@keyframes scrollDot{0%,100%{opacity:.3;transform:translate(-50%,0)}50%{opacity:1;transform:translate(-50%,9px)}}
+
+.section{padding:110px 0}
+.section--beige{background:var(--beige)}
+.section--tint{background:#f3f0ea}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:50px}
+.section-title{
+  margin:0;font:500 clamp(40px,5vw,66px)/.95 var(--serif);
+  letter-spacing:-.02em;
+}
+.section-sub{max-width:460px;margin:0;color:var(--muted);font-size:13px}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:90px;align-items:center}
+.about__lead{font:400 22px/1.55 var(--serif);max-width:620px;margin:28px 0 18px}
+.about__body{max-width:590px;color:var(--muted)}
+.about__media{position:relative}
+.r-4x5{aspect-ratio:4/5}.r-3x4{aspect-ratio:3/4}.r-1x1{aspect-ratio:1}.r-4x3{aspect-ratio:4/3}.r-3x2{aspect-ratio:3/2}
+.about__media:before{
+  content:"";position:absolute;width:65%;height:65%;right:-24px;bottom:-24px;
+  border:1px solid var(--brass);z-index:-1;
+}
+
+.services{
+  list-style:none;margin:0;padding:0;display:grid;
+  grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);
+}
+.service{padding:34px 30px 30px 0;border-bottom:1px solid var(--line);min-height:210px}
+.service:not(:nth-child(3n+1)){padding-left:30px;border-left:1px solid var(--line)}
+.service__num{font-size:10px;color:var(--brass);letter-spacing:.15em}
+.service__title{font:500 30px/1.05 var(--serif);margin:18px 0 10px}
+.service__text{font-size:12px;color:var(--muted);max-width:310px}
+
+.gallery{list-style:none;margin:0;padding:0;columns:3 280px;column-gap:18px}
+.project{break-inside:avoid;margin:0 0 18px}
+.project__btn{
+  position:relative;width:100%;padding:0;border:0;background:none;text-align:left;overflow:hidden;
+}
+.project__btn .photo{transition:transform .6s ease}
+.project__overlay{
+  position:absolute;inset:auto 0 0;padding:50px 22px 20px;
+  color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.82));
+  opacity:0;transform:translateY(10px);transition:.35s ease;
+}
+.project__btn:hover .photo{transform:scale(1.04)}
+.project__btn:hover .project__overlay{opacity:1;transform:none}
+.project__title{display:block;font:500 28px/1 var(--serif)}
+.project__meta,.project__view{display:block;font-size:9px;letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+.project__view{color:#e2c79d}
+
+.why{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.why__item{background:var(--paper);padding:32px}
+.why__title{font:500 25px/1.1 var(--serif);margin:0 0 12px}
+.why__text{font-size:11px;color:var(--muted)}
+
+.process{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.step{padding:30px 25px 10px 0;border-bottom:1px solid var(--line)}
+.step+.step{padding-left:25px;border-left:1px solid var(--line)}
+.step__num{font:500 42px/1 var(--serif);color:var(--brass)}
+.step__title{font:500 22px/1.1 var(--serif);margin:18px 0 10px}
+.step__text{font-size:11px;color:var(--muted)}
+
+.cta{padding:110px 0;background:var(--dark);color:#fff;text-align:center}
+.cta .section-title{max-width:850px;margin:auto}
+.cta__text{max-width:590px;margin:22px auto;color:rgba(255,255,255,.72)}
+.cta__actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}
+.contact__logo{margin:35px 0}
+.contact__details{font-style:normal}
+.contact__name{font:500 30px/1.1 var(--serif)}
+.contact__row{display:grid;grid-template-columns:100px 1fr;padding:12px 0;border-bottom:1px solid var(--line)}
+.contact__row dt{font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.contact__row dd{margin:0;font-size:12px}
+.contact__row a{text-decoration:none}
+.contact__row a:hover{color:var(--brass)}
+
+.site-footer{background:#111;color:#fff;padding:45px 0 25px}
+.site-footer__inner{display:flex;justify-content:space-between;gap:30px}
+.site-footer__name{font:500 30px/1 var(--serif);margin:0}
+.site-footer__tagline,.site-footer__copy{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#aaa}
+.site-footer__links{list-style:none;display:flex;gap:22px;padding:0;margin:0}
+.site-footer__links a{text-decoration:none;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.site-footer__links a:hover{color:#d2ad79}
+.site-footer__copy{padding-top:25px;border-top:1px solid #2a2a2a;margin-top:30px}
+
+.float-wa{
+  position:fixed;right:22px;bottom:22px;z-index:900;
+  padding:12px 17px;background:#171614;color:#fff;text-decoration:none;
+  font-size:9px;text-transform:uppercase;letter-spacing:.12em;
+  box-shadow:var(--shadow);opacity:0;transform:translateY(15px);pointer-events:none;transition:.3s;
+}
+.float-wa.is-visible{opacity:1;transform:none;pointer-events:auto}
+
+.lightbox{
+  width:min(94vw,1100px);max-width:none;border:0;padding:0;background:#111;color:#fff;
+}
+.lightbox::backdrop{background:rgba(0,0,0,.82)}
+.lightbox__inner{position:relative;padding:20px}
+.lightbox__stage{min-height:65vh;display:grid;place-items:center;background:#0b0b0b}
+.lightbox__stage img{max-height:65vh;width:auto;max-width:100%;object-fit:contain}
+.lightbox__bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:15px}
+.lightbox__btn{border:1px solid #555;background:none;color:#fff;padding:9px 14px;font-size:9px;text-transform:uppercase;letter-spacing:.12em}
+.lightbox__btn:hover{border-color:var(--brass);color:#e3c69b}
+.lightbox__caption{margin:0;text-align:center;font-size:10px}
+.lightbox__close{position:absolute;top:30px;right:30px;z-index:2}
+
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.is-visible{opacity:1;transform:none}
+[data-stagger] .reveal:nth-child(2){transition-delay:.07s}
+[data-stagger] .reveal:nth-child(3){transition-delay:.14s}
+[data-stagger] .reveal:nth-child(4){transition-delay:.21s}
+[data-stagger] .reveal:nth-child(5){transition-delay:.28s}
+[data-stagger] .reveal:nth-child(6){transition-delay:.35s}
+
+/* --- Responsive Layout Rules --- */
+@media(max-width:900px){
+  .nav__links{display:none}
+  .about,.contact{grid-template-columns:1fr;gap:50px}
+  .services{grid-template-columns:1fr 1fr}
+  .service:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+  .service:nth-child(even){padding-left:25px;border-left:1px solid var(--line)}
+  .why{grid-template-columns:1fr 1fr}
+  .process{grid-template-columns:1fr 1fr}
+  .step:nth-child(odd){padding-left:0}
+  .step:nth-child(even){padding-left:25px;border-left:1px solid var(--line)}
+  .hero__frame{inset:6%}
+}
+@media(max-width:600px){
+  .container{width:min(calc(100% - 30px),var(--container))}
+  .site-header__inner{min-height:72px}
+  .wordmark__name{font-size:21px}
+  .wordmark__sub{font-size:7px}
+  .btn--nav{display:none}
+  .hero__title-main{font-size:62px}
+  .hero__title-sub{letter-spacing:.18em;font-size:11px}
+  .hero__tagline{font-size:21px}
+  .hero__lead{font-size:12px}
+  .hero__frame{inset:4%}
+  .section{padding:75px 0}
+  .section-head{display:block;margin-bottom:35px}
+  .section-sub{margin-top:18px}
+  .services,.why,.process{grid-template-columns:1fr}
+  .service,.service:nth-child(even){padding:25px 0!important;border-left:0!important}
+  .why__item{padding:25px}
+  .step,.step:nth-child(even){padding:25px 0;border-left:0}
+  .site-footer__inner{display:block}
+  .site-footer__links{margin-top:20px}
+  .contact__row{grid-template-columns:85px 1fr}
+  .lightbox__stage{min-height:55vh}
+  .lightbox__bar{flex-wrap:wrap}
+}
+
+.nav-toggle{display:none;background:none;border:0;color:currentColor;padding:10px}
+.nav-toggle__bar{display:block;width:25px;height:1px;background:currentColor;margin:6px 0}
+.contact--simple{display:block;max-width:850px;text-align:center}
+.contact--simple .contact__info{max-width:760px;margin:0 auto}
+.contact--simple .contact__logo{justify-content:center}
+.contact--simple .contact__details{max-width:620px;margin:0 auto}
+.contact--simple .contact__row{text-align:left}
+.contact__actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+
+/* --- Mobile Menu Styles --- */
+@media(max-width:900px){
+  .nav-toggle{display:block}
+  .nav{
+    position:absolute;top:100%;left:15px;right:15px;
+    display:none;flex-direction:column;align-items:stretch;
+    padding:20px;background:rgba(255,253,249,.98);
+    color:var(--ink);box-shadow:0 15px 35px rgba(0,0,0,.12)
+  }
+  .nav.is-open{display:flex}
+  .nav__links{display:flex;flex-direction:column;gap:0}
+  .nav__links li{border-bottom:1px solid var(--line)}
+  .nav__link{display:block;padding:12px 0}
+  .nav .btn--nav{display:inline-flex;margin-top:15px}
+  .site-header:not(.is-scrolled) .nav{color:var(--ink)}
+}
+
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="site-header__inner container">
+
+      <a class="brand" href="#home" aria-label="Right Angle Interior &amp; Furniture, home">
+        <span class="logo logo--auto">
+          <!-- Text Logo Only -->
+          <span class="wordmark">
+            <svg class="wordmark__mark" viewBox="0 0 28 28" width="28" height="28" aria-hidden="true" focusable="false">
+              <path d="M5 3v20h20" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="5" y="19" width="4" height="4" fill="currentColor"/>
+            </svg>
+            <span class="wordmark__text">
+              <span class="wordmark__name">Right Angle</span>
+              <span class="wordmark__sub">Interior &amp; Furniture</span>
+            </span>
+          </span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--nav" href="#contact">Get a Quote</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="photo hero__photo">
+        <img src="images/hero-interior2.jpg" alt="A finished living room interior by Right Angle Interior &amp; Furniture" fetchpriority="high" decoding="async">
+      </div>
+
+      <div class="hero__frame" aria-hidden="true">
+        <span class="corner corner--tl"></span>
+        <span class="corner corner--br"></span>
+      </div>
+
+      <div class="hero__content container">
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__title-main">Right Angle</span>
+          <span class="hero__title-sub">Interior &amp; Furniture</span>
+        </h1>
+        <p class="hero__tagline">Where Spaces Meet Craftsmanship</p>
+        <p class="hero__lead">Premium interior design, custom furniture and complete interior solutions crafted around the way you live and work.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#projects">Explore Our Work</a>
+          <a class="btn btn--outline-light" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#services" aria-label="Scroll down to Services"></a>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--tint" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="services-title">What We Do</h2>
+        </div>
+
+        <ol class="services" data-stagger>
+          <li class="service reveal">
+            <span class="service__num">01</span>
+            <h3 class="service__title">Interior Design</h3>
+            <p class="service__text">Residential and commercial interior planning with a focus on functionality, aesthetics and detail.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">02</span>
+            <h3 class="service__title">Complete Interior Contracting</h3>
+            <p class="service__text">End-to-end execution from planning and material selection to final finishing.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">03</span>
+            <h3 class="service__title">Custom Furniture</h3>
+            <p class="service__text">Furniture designed and built specifically for your space and requirements.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">04</span>
+            <h3 class="service__title">Modular Furniture</h3>
+            <p class="service__text">Modern modular kitchens, wardrobes, storage and customized solutions.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">05</span>
+            <h3 class="service__title">Renovation &amp; Remodeling</h3>
+            <p class="service__text">Transforming existing spaces into modern, functional and beautiful environments.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num">06</span>
+            <h3 class="service__title">Commercial Interiors</h3>
+            <p class="service__text">Professional interiors for offices, shops, showrooms, restaurants and other commercial spaces.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS / GALLERY -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="projects-title">Selected Projects</h2>
+          <p class="section-sub">A glimpse into our work.</p>
+        </div>
+
+        <ul class="gallery" data-stagger>
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-4x5">
+                <img src="images/p1.jpg" alt="Luxury living room interior" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Luxury Living Room</span>
+                <span class="project__meta">Residential / Interior Design</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-1x1">
+                <img src="images/p2.png" alt="Modular kitchen with custom cabinetry" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Modular Kitchen</span>
+                <span class="project__meta">Residential / Modular Furniture</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-4x5">
+                <img src="images/p3.png" alt="Premium bedroom interior" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Premium Bedroom</span>
+                <span class="project__meta">Residential / Interior Design</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-3x4">
+                <img src="images/p4.png" alt="Custom-built furniture piece" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Custom Furniture</span>
+                <span class="project__meta">Furniture / Custom</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-4x3">
+                <img src="images/p5.png" alt="Office or commercial interior" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Office Interior</span>
+                <span class="project__meta">Commercial / Interior Design</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-4x5">
+                <img src="images/p6.jpg" alt="TV unit and living area" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">TV Unit &amp; Living Area</span>
+                <span class="project__meta">Residential / Furniture</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-3x4">
+                <img src="images/p7.png" alt="Wardrobe and storage" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Wardrobe &amp; Storage</span>
+                <span class="project__meta">Residential / Modular Furniture</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project reveal">
+            <button class="project__btn" type="button" data-lightbox>
+              <span class="photo r-1x1">
+                <img src="images/p8.jpg" alt="A completed interior project" loading="lazy" decoding="async">
+              </span>
+              <span class="project__overlay">
+                <span class="project__title">Completed Interior</span>
+                <span class="project__meta">Residential / Complete Interior</span>
+                <span class="project__view">View Project</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WHY RIGHT ANGLE -->
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="why-title">Why Right Angle</h2>
+        </div>
+
+        <ul class="why" data-stagger>
+          <li class="why__item reveal">
+            <h3 class="why__title">Thoughtful Design</h3>
+            <p class="why__text">Every space is planned around functionality and aesthetics.</p>
+          </li>
+          <li class="why__item reveal">
+            <h3 class="why__title">Quality Craftsmanship</h3>
+            <p class="why__text">Attention to materials, construction and finishing.</p>
+          </li>
+          <li class="why__item reveal">
+            <h3 class="why__title">Customized Solutions</h3>
+            <p class="why__text">Furniture and interiors designed around your requirements.</p>
+          </li>
+          <li class="why__item reveal">
+            <h3 class="why__title">Complete Execution</h3>
+            <p class="why__text">From initial planning to the finished space.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--tint" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="process-title">From Idea to Reality</h2>
+        </div>
+
+        <ol class="process" data-stagger>
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Requirements</h3>
+            <p class="step__text">We understand your needs, your space, style preferences and budget.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Design &amp; Planning</h3>
+            <p class="step__text">Layouts, materials and finishes are planned in detail.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Execution</h3>
+            <p class="step__text">Carpentry, finishing and installation, carried out on site.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Final Handover</h3>
+            <p class="step__text">A final check, then the finished space is handed to you.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--dark cta" id="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__inner reveal">
+          <h2 class="section-title" id="cta-title">Let's Create Your Space</h2>
+          <p class="cta__text">Have a space in mind? Let's discuss your ideas and turn them into something you'll love.</p>
+          <div class="cta__actions">
+            <a class="btn btn--brass" href="#contact" data-call>Call Us</a>
+            <a class="btn btn--outline-light" href="#contact" data-whatsapp>WhatsApp Us</a>
+            <a class="btn btn--outline-light" href="#contact" data-instagram>Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact contact--simple">
+        <div class="contact__info reveal">
+          <h2 class="section-title" id="contact-title">Get In Touch</h2>
+
+          <div class="logo logo--dark contact__logo">
+            <!-- Text Logo Only -->
+            <span class="wordmark">
+              <svg class="wordmark__mark" viewBox="0 0 28 28" width="28" height="28" aria-hidden="true" focusable="false">
+                <path d="M5 3v20h20" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <rect x="5" y="19" width="4" height="4" fill="currentColor"/>
+              </svg>
+              <span class="wordmark__text">
+                <span class="wordmark__name">Right Angle</span>
+                <span class="wordmark__sub">Interior &amp; Furniture</span>
+              </span>
+            </span>
+          </div>
+
+          <address class="contact__details">
+            <p class="contact__name">Right Angle Interior &amp; Furniture</p>
+            <dl>
+              <div class="contact__row">
+                <dt>Contact</dt>
+                <dd><a href="#contact" data-call data-phone-text>97846 08863</a></dd>
+              </div>
+              <div class="contact__row">
+                <dt>Location</dt>
+                <dd data-location-text>Karvenagar,Pune, Maharashtra /Pin:411052</dd>
+              </div>
+              <div class="contact__row">
+                <dt>Instagram</dt>
+                <dd><a href="#contact" data-instagram data-instagram-text>Instagram</a></dd>
+              </div>
+            </dl>
+          </address>
+
+          <div class="contact__actions">
+            <a class="btn btn--solid" href="#contact" data-call>Call Us</a>
+            <a class="btn btn--brass" href="#contact" data-whatsapp>WhatsApp</a>
+            <a class="btn btn--outline-dark" href="#contact" data-instagram>Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__name">Right Angle Interior &amp; Furniture</p>
+        <p class="site-footer__tagline">Interior Design &bull; Furniture &bull; Complete Interior Solutions</p>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="#contact" data-instagram>Instagram</a></li>
+        <li><a href="#contact" data-whatsapp>WhatsApp</a></li>
+        <li><a href="#contact" data-call>Call</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="site-footer__copy">Copyright &copy; 2026 Right Angle Interior &amp; Furniture</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp shortcut -->
+  <a class="float-wa" href="#contact" data-whatsapp>WhatsApp</a>
+
+  <!-- Project viewer -->
+  <dialog class="lightbox" id="lightbox" aria-label="Project viewer">
+    <div class="lightbox__inner">
+      <button class="lightbox__btn lightbox__close" type="button" data-lb-close>Close</button>
+      <div class="lightbox__stage" id="lb-stage"></div>
+      <div class="lightbox__bar">
+        <button class="lightbox__btn" type="button" data-lb-prev>Previous</button>
+        <p class="lightbox__caption"><span id="lb-title"></span> <span id="lb-meta"></span></p>
+        <button class="lightbox__btn" type="button" data-lb-next>Next</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+const SITE = {
+  phone: "97846 08863",
+  whatsapp: "97846 08863",
+  instagram: "https://www.instagram.com/right_angle_5333?stkn=MWU4Y2V4bDA4dnA1ZA==",
+  location: "Karvenagar,Pune, Maharashtra /Pin:411052"
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".site-header");
+  const floatWa = document.querySelector(".float-wa");
+
+  const updateScrollUI = () => {
+    const scrolled = window.scrollY > 40;
+    header?.classList.toggle("is-scrolled", scrolled);
+    floatWa?.classList.toggle("is-visible", window.scrollY > window.innerHeight * 0.65);
+  };
+
+  updateScrollUI();
+  window.addEventListener("scroll", updateScrollUI, { passive: true });
+
+  document.querySelectorAll("[data-phone-text]").forEach(el => {
+    el.textContent = SITE.phone;
+  });
+  document.querySelectorAll("[data-location-text]").forEach(el => {
+    el.textContent = SITE.location;
+  });
+  document.querySelectorAll("[data-instagram-text]").forEach(el => {
+    el.textContent = SITE.instagram;
+  });
+
+  const phoneForUrl = String(SITE.phone).replace(/[^\d+]/g, "");
+  const whatsappForUrl = String(SITE.whatsapp).replace(/\D/g, "");
+
+  document.querySelectorAll("[data-call]").forEach(el => {
+    if (phoneForUrl && !phoneForUrl.includes("CONTACT")) {
+      el.href = `tel:${phoneForUrl}`;
+    } else {
+      el.href = "#contact";
+    }
+  });
+
+  document.querySelectorAll("[data-whatsapp]").forEach(el => {
+    if (whatsappForUrl && whatsappForUrl.length >= 8) {
+      el.href = `https://wa.me/${whatsappForUrl}`;
+      el.target = "_blank";
+      el.rel = "noopener";
+    } else {
+      el.href = "#contact";
+    }
+  });
+
+  document.querySelectorAll("[data-instagram]").forEach(el => {
+    if (SITE.instagram && !SITE.instagram.includes("INSTAGRAM")) {
+      el.href = SITE.instagram;
+      el.target = "_blank";
+      el.rel = "noopener";
+    } else {
+      el.href = "#contact";
+    }
+  });
+
+  const revealItems = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(el => observer.observe(el));
+  } else {
+    revealItems.forEach(el => el.classList.add("is-visible"));
+  }
+
+  const dialog = document.getElementById("lightbox");
+  const stage = document.getElementById("lb-stage");
+  const title = document.getElementById("lb-title");
+  const meta = document.getElementById("lb-meta");
+  const projects = [...document.querySelectorAll("[data-lightbox]")];
+  let current = 0;
+
+  function showProject(index) {
+    if (!projects.length || !stage) return;
+    current = (index + projects.length) % projects.length;
+
+    const project = projects[current];
+    const img = project.querySelector("img");
+    const projectTitle = project.querySelector(".project__title")?.textContent || "";
+    const projectMeta = project.querySelector(".project__meta")?.textContent || "";
+
+    stage.innerHTML = "";
+    if (img?.src) {
+      const clone = document.createElement("img");
+      clone.src = img.src;
+      clone.alt = img.alt || projectTitle;
+      stage.appendChild(clone);
+    } else {
+      stage.textContent = "Project image not available.";
+    }
+
+    if (title) title.textContent = projectTitle;
+    if (meta) meta.textContent = projectMeta ? ` — ${projectMeta}` : "";
+
+    if (dialog && typeof dialog.showModal === "function" && !dialog.open) {
+      dialog.showModal();
+    }
+  }
+
+  projects.forEach((project, index) => {
+    project.addEventListener("click", () => showProject(index));
+  });
+
+  document.querySelector("[data-lb-close]")?.addEventListener("click", () => dialog?.close());
+  document.querySelector("[data-lb-prev]")?.addEventListener("click", () => showProject(current - 1));
+  document.querySelector("[data-lb-next]")?.addEventListener("click", () => showProject(current + 1));
+
+  dialog?.addEventListener("click", event => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  document.addEventListener("keydown", event => {
+    if (!dialog?.open) return;
+    if (event.key === "Escape") dialog.close();
+    if (event.key === "ArrowLeft") showProject(current - 1);
+    if (event.key === "ArrowRight") showProject(current + 1);
+  });
+
+  const navToggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav");
+  navToggle?.addEventListener("click", () => {
+    const open = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-expanded", String(!open));
+    navToggle.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+    nav?.classList.toggle("is-open", !open);
+  });
+  nav?.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navToggle?.setAttribute("aria-expanded", "false");
+      navToggle?.setAttribute("aria-label", "Open menu");
+      nav?.classList.remove("is-open");
+    });
+  });
+});
+  </script>
+</body>
+</html>
